@@ -37,7 +37,6 @@ img {
 }
 
 a:hover{
-  color: red;
   font-style: oblique;
 }
 
@@ -54,6 +53,10 @@ li {
   padding: 1em;
 }
 
+.work-container a:nth-child(odd) {
+  background: yellow;
+}
+
 .center {
   margin: auto;
   width: 25%;
@@ -61,6 +64,11 @@ li {
 
 .contact-icon {
   font-size: 150%;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+.contact-icon:hover {
+  transform: scale(1.3);
 }
 
 .list-icon {
@@ -71,7 +79,7 @@ li {
 
 .container {
   height: 150%;
-  background-color: hsl(0, 0%, 97%, .25);
+  background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -88,13 +96,15 @@ li {
 }
 
 .box {
-    height: 8em;
-    width: 8em;
-    background: #3c738a;
+  height: 8em;
+  width: 8em;
+  background: #3c738a;
+  transition: width 1s, height 1s, background-color 1s, transform 1s;
 }
 
 .box:hover {
   background: grey;
+  transform: scale(1.1);
 }
 
 .linktext{

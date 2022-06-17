@@ -53,10 +53,6 @@ li {
   padding: 1em;
 }
 
-.work-container a:nth-child(odd) {
-  background: yellow;
-}
-
 .center {
   margin: auto;
   width: 25%;
@@ -75,6 +71,10 @@ li {
   font-size: 200%;
   padding: .25em;
   color: white;
+}
+
+.box:nth-child(even) {
+  background-color: #8A3C73;
 }
 
 .container {

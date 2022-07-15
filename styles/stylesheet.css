@@ -4,10 +4,6 @@ h1 {
   font-variant: small-caps;
 }
 
-nav:hover {
-  background-color: #3c738a;
-}
-
 body{
   font-family: 'Montserrat', sans-serif;
   color: black;
@@ -51,6 +47,10 @@ li:hover {
 
 li {
   padding: 1em;
+}
+
+nav p {
+  display: inline-block;
 }
 
 .center {
@@ -109,4 +109,40 @@ li {
 
 .linktext{
   color: white;
+}
+
+/* contact pg */
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: .75em;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #3c738a;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background: grey;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+fieldset, legend {
+  margin-left: -7px;
+}
+
+textarea {
+  resize: none;
 }
